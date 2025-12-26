@@ -1,0 +1,13 @@
+name: Nexus Cloud Deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Production
+        run: |
+          curl -n https://api.railway.app/v1/deploy # Exemplo para Railway

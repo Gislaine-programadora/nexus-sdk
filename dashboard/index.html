@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Admin - Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2 style="color: var(--accent);">NEXUS 🌌</h2>
+        <p style="font-size: 0.8rem; color: #64748b;">Infrastructure Provider</p>
+        <hr style="border: 0.5px solid #1e293b; margin: 2rem 0;">
+        <div style="color: var(--accent);">● Dashboard</div>
+        <div style="margin-top: 1rem; color: #94a3b8;">Organizations</div>
+        <div style="margin-top: 1rem; color: #94a3b8;">Relayers</div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Overview do Ecossistema</h1>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span style="color: #94a3b8;">Total Sponsored (USD)</span>
+                <div class="metric-value" id="total-sponsored">$ 0.00</div>
+            </div>
+            <div class="metric-card">
+                <span style="color: #94a3b8;">Clientes Ativos</span>
+                <div class="metric-value" id="active-clients">0</div>
+            </div>
+            <div class="metric-card">
+                <span style="color: #94a3b8;">Tx Gasless (24h)</span>
+                <div class="metric-value" style="color: var(--success);">1.240</div>
+            </div>
+        </div>
+
+        <h3>Organizações Registradas</h3>
+        <table id="clients-table">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Saldo Restante</th>
+                    <th>API Key</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+// backend/prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Representa uma empresa (cliente do seu SDK)
+model Organization {
+  id              String        @id @default(uuid())
+  name            String
+  apiKey          String        @unique
+  status          Status        @default(ACTIVE)
+  
+  // Gestão de Saldo (Onde vivem os seus $129k injetados ou recarregados)
+  gasBalance      Float         @default(0.0)
+  totalSpent      Float         @default(0.0)
+  
+  // Segurança e Restrições
+  allowedDomains  String[]      @default(["localhost"])
+  
+  // Relacionamentos
+  transactions    Transaction[]
+  notifications   Notification[]
+  
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+}
+
+// Histórico de todas as transações feitas pelo seu sistema
+model Transaction {
+  id              String       @id @default(uuid())
+  hash            String       @unique // Hash da transação na blockchain
+  network         String       // Ex: 'polygon', 'base', 'arbitrum'
+  fromAddress     String       // Carteira do usuário final
+  toAddress       String       // Destino do pagamento
+  value           String       // Valor enviado
+  gasCostUsd      Float        // Custo real de gás em dólares
+  status          TxStatus     @default(SUCCESS)
+  
+  // Relacionamento com a empresa pagadora
+  orgId           String
+  organization    Organization @relation(fields: [orgId], references: [id])
+  
+  createdAt       DateTime     @default(now())
+}
+
+// Sistema de alertas para saldo baixo e avisos de sistema
+model Notification {
+  id              String       @id @default(uuid())
+  message         String
+  type            NotifyType   @default(INFO)
+  read            Boolean      @default(false)
+  
+  orgId           String
+  organization    Organization @relation(fields: [orgId], references: [id])
+  
+  createdAt       DateTime     @default(now())
+}
+
+// Enums para garantir integridade dos dados
+enum Status {
+  ACTIVE
+  PAUSED
+  SUSPENDED
+}
+
+enum TxStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}
+
+enum NotifyType {
+  INFO
+  WARNING
+  CRITICAL_BALANCE
+}

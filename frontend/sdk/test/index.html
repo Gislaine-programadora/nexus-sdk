@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus SDK - Enterprise Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0c;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: radial-gradient(circle at top right, #1e1b4b, #0a0a0c);
+        }
+
+        .dashboard-mockup {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 32px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo-placeholder {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -1px;
+            margin-bottom: 40px;
+            color: #6366F1;
+        }
+
+        .balance-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .balance-label { font-size: 14px; color: rgba(255, 255, 255, 0.5); }
+        .balance-value { font-size: 32px; font-weight: 700; margin-top: 5px; }
+
+        .buy-btn {
+            background: white;
+            color: black;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Container onde o modal do seu SDK vai aparecer */
+        #nexus-root { position: relative; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-mockup">
+        <div class="logo-placeholder">ALPHA EXCHANGE</div>
+        
+        <div class="balance-card">
+            <div class="balance-label">Seu Saldo Total</div>
+            <div class="balance-value">R$ 15.420,00</div>
+        </div>
+
+        <p style="font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 20px;">
+            Clique abaixo para testar a compra via Nexus SDK.
+        </p>
+
+        <button class="buy-btn" onclick="openNexusTransaction()">Comprar USDC (Sem Taxas)</button>
+    </div>
+
+    <script>
+        // Simulando a lógica que injetamos no SDK
+        function openNexusTransaction() {
+            // 1. Criamos o Overlay (Fundo escuro)
+            const overlay = document.createElement('div');
+            overlay.className = 'nexus-overlay';
+            
+            // 2. Criamos o Card de Vidro (Design que definimos no CSS)
+            overlay.innerHTML = `
+                <div class="nexus-modal-card">
+                    <div class="nexus-badge-gas">✨ TAXA DE GÁS SPONSORED</div>
+                    <h2>Confirmar Compra</h2>
+                    <p>Você está adquirindo 100 USDC na rede Polygon. A <b>Alpha Exchange</b> está cobrindo seus custos de rede.</p>
+                    
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: left;">
+                        <div style="font-size: 12px; color: #aaa;">De: Smart Wallet (0x8f3...d62)</div>
+                        <div style="font-size: 12px; color: #aaa; margin-top: 5px;">Gás: <span style="color: #00FFA3;">Grátis</span></div>
+                    </div>
+
+                    <button class="nexus-main-btn" onclick="simulateExecution(this)">Confirmar com Biometria</button>
+                </div>
+            `;
+
+            document.body.appendChild(overlay);
+        }
+
+        function simulateExecution(btn) {
+            btn.innerHTML = "Processando na Blockchain...";
+            btn.style.opacity = "0.7";
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert("🚀 Sucesso! Transação enviada para o Relayer Nexus. O saldo da empresa será debitado no seu banco de dados.");
+                document.querySelector('.nexus-overlay').remove();
+            }, 2000);
+        }
+    </script>
+
+    <style>
+        /* Estilos do Nexus que o seu SDK injeta automaticamente */
+        .nexus-overlay {
+            position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(12px); display: flex; align-items: center;
+            justify-content: center; z-index: 10000;
+        }
+        .nexus-modal-card {
+            background: rgba(20, 20, 25, 0.9); border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px; padding: 35px; width: 90%; max-width: 360px;
+            text-align: center; color: white; box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+        }
+        .nexus-badge-gas {
+            display: inline-block; background: rgba(0, 255, 163, 0.15);
+            color: #00FFA3; padding: 6px 14px; border-radius: 100px;
+            font-size: 11px; font-weight: 700; margin-bottom: 20px;
+            border: 1px solid rgba(0, 255, 163, 0.3);
+        }
+        .nexus-main-btn {
+            width: 100%; background: #6366F1; color: white; border: none;
+            padding: 16px; border-radius: 14px; font-size: 16px; font-weight: 700;
+            cursor: pointer; transition: 0.2s;
+        }
+    </style>
+</body>
+</html>

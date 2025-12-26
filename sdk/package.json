@@ -1,0 +1,31 @@
+{
+  "name": "@nexus-hq/sdk",
+  "version": "0.1.0-beta.1",
+  "description": "O SDK definitivo para abstração de conta e interoperabilidade Web3.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "keywords": [
+    "web3",
+    "sdk",
+    "blockchain",
+    "account-abstraction",
+    "erc4337",
+    "nexus"
+  ],
+  "author": "Seu Nome/Empresa",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@types/node": "^20.0.0"
+  }
+}

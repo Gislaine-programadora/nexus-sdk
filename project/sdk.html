@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa VIP | Powered by Nexus</title>
+    <script src="https://cdn.jsdelivr.net/npm/@nexus-hq/sdk@latest/dist/nexus.min.js"></script>
+    <style>
+        body { background: #050505; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #111; padding: 40px; border-radius: 24px; border: 1px solid #222; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        button { background: linear-gradient(90deg, #6366F1, #A855F7); border: none; padding: 15px 30px; color: white; border-radius: 12px; font-weight: bold; cursor: pointer; transition: 0.3s; font-size: 16px; }
+        button:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); }
+        .status { margin-top: 20px; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Nexus <span style="color:#6366F1">Experience</span></h1>
+        <p>Clique abaixo para realizar uma transação sem gás.</p>
+        <button id="btn-transact">Comprar Agora (Gas Free)</button>
+        <div id="status" class="status">Aguardando interação...</div>
+    </div>
+
+    <script>
+        // 1. Inicializar o SDK com a Key que tem os $129.873,00 injetados
+        const nexus = new Nexus('nx_live_vossa_chave_gerada_aqui');
+
+        const btn = document.getElementById('btn-transact');
+        const statusDiv = document.getElementById('status');
+
+        btn.onclick = async () => {
+            statusDiv.innerText = "🚀 Iniciando biometria...";
+            
+            try {
+                // 2. Executar a mágica (Multi-chain nativo)
+                const tx = await nexus.execute({
+                    network: 'polygon', // O SDK gerencia a bridge se necessário
+                    to: '0x742d35Cc6634C0532925a3b844Bc454e4438f44e',
+                    value: '0.01' 
+                });
+
+                statusDiv.innerHTML = `✅ Sucesso! <br> <a href="${tx.explorer}" target="_blank" style="color:#00ffa3">Ver no Explorer</a>`;
+                console.log("Transação processada pelo Relayer Nexus:", tx.hash);
+            } catch (err) {
+                statusDiv.innerText = "❌ Erro: Saldo insuficiente ou Biometria negada.";
+                console.error(err);
+            }
+        };
+    </script>
+</body>
+</html>

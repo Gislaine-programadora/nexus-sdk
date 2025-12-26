@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Enterprise - Painel de Integração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6366F1;
+            --bg: #0f172a;
+        }
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        h1 { font-size: 2rem; margin-bottom: 1rem; letter-spacing: -1px; }
+        p { color: #94a3b8; margin-bottom: 2rem; }
+        
+        .action-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+        }
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.5);
+        }
+        .status-badge {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nexus Bridge 🌌</h1>
+        <p>Ambiente de teste para integração do SDK via <b>npm link</b>.</p>
+        
+        <button class="action-btn" id="btn-transfer">
+            Simular Transferência Gasless
+        </button>
+
+        <br>
+        <div class="status-badge">● SDK LINKED: @nexus-hq/sdk</div>
+    </div>
+
+    <script type="module">
+        // Importando diretamente da pasta node_modules linkada
+        // O caminho aponta para o dist/index.js que você gerou no build do SDK
+        import { Nexus } from './node_modules/@nexus-hq/sdk/dist/index.js';
+
+        // Inicializando o SDK com uma chave de teste
+        const nexus = new Nexus({
+            apiKey: 'nx_live_8f3d62a7b62a7b62a7b'
+        });
+
+        console.log("✅ Nexus SDK carregado via Link!");
+
+        // Função disparada pelo botão
+        document.getElementById('btn-transfer').addEventListener('click', async () => {
+            console.log("Iniciando transação...");
+            
+            // Chamando o método do seu SDK Real
+            await nexus.requestTransaction({
+                to: '0x742d35Cc6634C0532925a3b844Bc454e4438f44e',
+                value: '1250.00',
+                network: 'polygon'
+            });
+        });
+    </script>
+</body>
+</html>

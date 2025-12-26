@@ -1,0 +1,42 @@
+# nexus-sdk - Backend
+
+Backend desenvolvido com Express para o projeto nexus-sdk.
+
+## 🚀 Tecnologias
+
+- Node.js
+- Express
+
+- PostgreSQL
+
+## 📦 Instalação
+
+```bash
+npm install
+```
+
+## ⚙️ Configuração
+
+1. Copie o arquivo `.env.example` para `.env`
+2. Configure as variáveis de ambiente
+
+## 🏃 Executar
+
+```bash
+# Desenvolvimento
+npm run dev
+
+# Produção
+npm start
+```
+
+## 📝 API Endpoints
+
+- `GET /` - Welcome message
+- `GET /health` - Health check
+
+## 🧪 Testes
+
+```bash
+npm test
+```
