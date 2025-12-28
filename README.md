@@ -32,6 +32,9 @@ npx nexus-init
 
 - Database: PostgreSQL
 - DevOps: Docker & Docker Compose
+- prisma/shema.prisma
+- npm
+- supabase
 
 ## 📄 Licença
 
