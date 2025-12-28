@@ -50,6 +50,23 @@ npx nexus-init
 - npm
 - supabase
 
+
+💰 Projeção de Receita (Exemplo de Monetização)
+Adiciona este bloco logo abaixo das funcionalidades:
+
+## 💰 Modelo de Monetização & Lucratividade
+
+O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os proprietários de infraestrutura gerem receita passiva em cada operação de Top-up.
+
+| Volume Mensal de Transações | Taxa de Serviço (5%) | Seu Lucro Mensal (Bruto) | Relatório Gerado |
+| :--- | :--- | :--- | :--- |
+| $ 10.000 | 5% | **$ 500** | ✅ Automático |
+| $ 100.000 | 5% | **$ 5.000** | ✅ Automático |
+| $ 1.000.000 | 5% | **$ 50.000** | ✅ Automático |
+
+> **Nota:** Todos os valores são calculados automaticamente pelo nosso motor de liquidação e os recibos são enviados via e-mail em formato PDF profissional.
+
+
 ## 📄 Licença
 
 MIT
