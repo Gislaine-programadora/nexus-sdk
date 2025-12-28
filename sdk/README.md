@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b0e3d44-b5d2-44cd-b785-b27084747a12" width="200" alt="Nexus Logo">
+</p>
+
+
 # 📦 Nexus SDK Core npm
 
 O **Nexus SDK** é a biblioteca cliente oficial para integração com a infraestrutura Nexus. Ele permite que desenvolvedores conectem suas aplicações a Smart Wallets com suporte a transações gasless (sem taxas para o usuário).
