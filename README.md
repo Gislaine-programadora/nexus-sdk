@@ -1,4 +1,6 @@
-![Nexus Logo](https://raw.githubusercontent.com/Gislaine-programadora/nexus-sdk/main/assets/nexus-image.jpg)
+<div class="nexus-logo">
+    <img src="https://files.oaiusercontent.com/file-AtVf9G9t3Gv7G9t3Gv7G9t3G" alt="Nexus-SDK Logo" style="max-width: 120px; height: auto;">
+</div>
 
 # 🌌 Nexus SDK: Unified Web3 Liquidity & Gas Abstraction
 
