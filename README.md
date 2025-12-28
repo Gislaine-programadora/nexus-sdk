@@ -21,6 +21,10 @@
 ```bash
 npm install @nexus-hq/sdk
 
+npx nexus-init
+
+
+
 ## 🛠️ Tecnologias
 
 - Backend: Express (Node.js)
@@ -34,5 +38,7 @@ npm install @nexus-hq/sdk
 MIT
 
 ---
+
+© 2025 Nexus Infrastructure.
 
 **Criado com ❤️ usando Gbit Framework**
