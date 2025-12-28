@@ -64,7 +64,8 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 | $ 100.000 | 5% | **$ 5.000** | ✅ Automático |
 | $ 1.000.000 | 5% | **$ 50.000** | ✅ Automático |
 
-> **Nota:** Todos os valores são calculados automaticamente pelo nosso motor de liquidação e os recibos são enviados via e-mail em formato PDF profissional.
+> **Nota:** Todos os valores são calculados automaticamente pelo nosso motor de liquidação e os recibos são enviados
+ via e-mail em formato PDF profissional.
 
 
 ## 📄 Licença
