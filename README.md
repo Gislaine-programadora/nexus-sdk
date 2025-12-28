@@ -1,4 +1,6 @@
-![nexus-image](https://github.com/user-attachments/assets/4b0e3d44-b5d2-44cd-b785-b27084747a12)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b0e3d44-b5d2-44cd-b785-b27084747a12" width="200" alt="Nexus Logo">
+</p>
 
 
 # 🌌 Nexus SDK: Unified Web3 Liquidity & Gas Abstraction
