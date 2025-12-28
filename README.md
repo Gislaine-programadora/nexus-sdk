@@ -1,3 +1,5 @@
+![Nexus Logo](https://raw.githubusercontent.com/Gislaine-programadora/nexus-sdk/main/assets/nexus-image.jpg)
+
 # 🌌 Nexus SDK: Unified Web3 Liquidity & Gas Abstraction
 
 **Nexus** é uma infraestrutura de alto escalão projetada para empresas que desejam integrar Web3 sem fricção. Através da nossa tecnologia de **Account Abstraction** e **Relayer Gateway**, eliminamos a necessidade de usuários finais possuírem tokens nativos para pagar taxas de gás.
