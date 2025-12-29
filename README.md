@@ -95,7 +95,10 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 
 ##  resultado  do painel  para sdk
 
-<img width="747" height="609" alt="sdk-painel-image" src="https://github.com/user-attachments/assets/b7a2c835-fe4f-4685-804b-eaeea5273749" />
+# Nexus SDK
+
+```html
+<img width="747" height="609" alt="sdk-painel-image" src="https://github.com/user-attachments/assets/0abb39e1-6cee-4cc5-838e-6de81d2b34cc" />
 
 
 
