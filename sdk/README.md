@@ -155,8 +155,8 @@ Este é o primeiro passo da Nexus, focando em remover a fricção entre o usuár
 
 ##  NPM  
 
-  ```bash
-NPM: https://www.npmjs.com/package/@nexus-hq/sdk
+
+NPM:  https://www.npmjs.com/package/@nexus-hq/sdk
 
 
 📝 Licença
