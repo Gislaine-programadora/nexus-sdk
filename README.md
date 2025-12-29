@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=for-the-badge" alt="Maintained">
 </p>
 
-      <img src="https://img.shields.io/npm/v/@nexus-hq/sdk?style=for-the-badge&color=red" alt="NPM Version">
+   <img src="https://img.shields.io/npm/v/@nexus-hq/sdk?style=for-the-badge&color=red" alt="NPM Version">
 
 ---
 
