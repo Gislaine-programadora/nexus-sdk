@@ -161,11 +161,9 @@ NPM:  https://www.npmjs.com/package/@nexus-hq/sdk
 ---
 # Nexus SDK 🚀
 
-Unified Web3 Liquidity & Gas Abstraction — simplifique a integração com Web3 em qualquer aplicaçao
-
-
-![Nexus Bridge](https://i.imgur.com/ABC123.png)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b0e3d44-b5d2-44cd-b785-b27084747a12" width="200" alt="Nexus Logo">
+</p>
 
 📝 Licença
 
