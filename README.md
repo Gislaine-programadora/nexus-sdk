@@ -35,7 +35,7 @@
 npm install @nexus-hq/sdk
 
 npx nexus-init
-´´´
+```ts
 
 
 🚀 Como Configurar o SDK no seu Projeto
