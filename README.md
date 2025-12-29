@@ -2,14 +2,14 @@
   <img src="https://github.com/user-attachments/assets/4b0e3d44-b5d2-44cd-b785-b27084747a12" width="200" alt="Nexus Logo">
 </p>
 
+
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.1--blue?style=for-the-badge" alt="Version">
+   <img src="https://img.shields.io/npm/v/@nexus-hq/sdk?style=for-the-badge&color=red" alt="NPM Version">
+  <img src="https://img.shields.io/badge/version-0.1.0--beta.2-blue?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Web3-Infrastructure-blueviolet?style=for-the-badge" alt="Web3">
   <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=for-the-badge" alt="Maintained">
 </p>
-
-   <img src="https://img.shields.io/npm/v/@nexus-hq/sdk?style=for-the-badge&color=red" alt="NPM Version">
 
 ---
 
