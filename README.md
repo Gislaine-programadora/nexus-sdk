@@ -34,8 +34,8 @@
 ```bash
 npm install @nexus-hq/sdk
 
-npx nexus-ini
-´´´
+npx nexus-init
+```
 
 
 
