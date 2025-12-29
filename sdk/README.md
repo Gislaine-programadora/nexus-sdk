@@ -139,6 +139,20 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 > **Nota:** Todos os valores são calculados automaticamente pelo nosso motor de liquidação e os recibos
  são enviados via e-mail em formato PDF profissional.
 
+🚀 O Nexus-SDK acaba de nascer: Infraestrutura Web3 com foco em lucratividade!
+
+É com muito orgulho que anuncio a publicação oficial do @nexus-hq/sdk no NPM! 📦🌌
+
+Desenvolver para a Web3 não deve ser apenas sobre tecnologia, mas sobre sustentabilidade financeira. O Nexus-SDK foi criado para permitir que desenvolvedores e empresas criem apps com transações Gasless (Abstração de Conta) e, ao mesmo tempo, gerenciem lucros de comissão de forma automatizada.
+
+✨ Destaques do Lançamento: ✅ Instalação Instantânea: npx @nexus-hq/sdk nexus-init ✅ Receita Passiva: Sistema nativo de comissões (revenue sharing). ✅ Relatórios Profissionais: Extratos de lucro direto no e-mail. ✅ Licença MIT: Open-source e pronto para o mercado.
+
+Este é o primeiro passo da Nexus, focando em remover a fricção entre o usuário final e a complexidade da blockchain.
+
+🛠️ Confira no NPM: https://www.npmjs.com/package/@nexus-hq/sdk ⭐ Código-fonte no GitHub: https://github.com/Gislaine-programadora/nexus-sdk
+
+#Web3 #Blockchain #NPM #OpenSource #SoftwareEngineering #AccountAbstraction #Ethereum #NexusSDK
+
 
 📝 Licença
 
