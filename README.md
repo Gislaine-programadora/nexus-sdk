@@ -107,8 +107,6 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 </p>
 
 
----
-
 
 # Nexus SDK 🚀
 Unified Web3 Liquidity & Gas Abstraction — simplifique a integração com Web3 em qualquer aplicação.
