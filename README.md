@@ -97,9 +97,16 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 
 # Nexus SDK
 
-```html
-<img width="747" height="609" alt="sdk-painel-image" src="https://github.com/user-attachments/assets/0abb39e1-6cee-4cc5-838e-6de81d2b34cc" />
 
+Isso vai mostrar apenas o texto, não a imagem.
+
+---
+
+### ✅ Fora do bloco (funciona)
+```markdown
+# Nexus SDK
+
+<img width="747" height="609" alt="sdk-painel-image" src="https://github.com/user-attachments/assets/0abb39e1-6cee-4cc5-838e-6de81d2b34cc" />
 
 
 # Nexus SDK 🚀
