@@ -38,7 +38,8 @@ npx nexus-init
 
 
 🚀 Como Configurar o SDK no seu Projeto
-Após instalar com npm install @nexus-hq/sdk, importe e configure o provedor principal no ponto de entrada da sua aplicação (ex: App.tsx ou index.ts):
+Após instalar com npm install @nexus-hq/sdk, importe e configure o provedor principal no ponto de entrada
+ da sua aplicação (ex: App.tsx ou index.ts):
 
 import { NexusProvider } from '@nexus-hq/sdk';
 
