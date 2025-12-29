@@ -37,6 +37,32 @@ npm install @nexus-hq/sdk
 npx nexus-init
 
 
+🚀 Como Configurar o SDK no seu Projeto
+Após instalar com npm install @nexus-hq/sdk, importe e configure o provedor principal no ponto de entrada da sua aplicação (ex: App.tsx ou index.ts):
+
+import { NexusProvider } from '@nexus-hq/sdk';
+
+const nexusConfig = {
+  apiKey: 'SUA_NEXUS_API_KEY', // Chave gerada no dashboard
+  supabaseUrl: 'https://sua-url.supabase.co',
+  supabaseKey: 'sua-anon-key-do-supabase',
+  network: 'polygon-amoy' // ou 'mainnet'
+};
+
+// Inicializando a infraestrutura
+const nexus = new NexusProvider(nexusConfig);
+
+async function startSession() {
+  try {
+    await nexus.initialize();
+    console.log("🚀 Nexus Infraestrutura Pronta!");
+  } catch (error) {
+    console.error("❌ Falha na inicialização:", error);
+  }
+}
+
+startSession();
+
 
 ## 🛠️ Tecnologias
 
