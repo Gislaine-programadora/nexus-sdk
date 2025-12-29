@@ -35,7 +35,9 @@
 npm install @nexus-hq/sdk
 
 npx nexus-init
-```ts
+
+---
+
 
 
 🚀 Como Configurar o SDK no seu Projeto
@@ -116,12 +118,9 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 Unified Web3 Liquidity & Gas Abstraction — simplifique a integração com Web3 em qualquer aplicação.
 
 
-## 📄 Licença
+📄 Licença
 
 MIT
-
----
-
-© 2025 Nexus Infrastructure.
+© 2025 Nexus Infrastructur
 
 **Criado com ❤️ usando Gbit Framework**
