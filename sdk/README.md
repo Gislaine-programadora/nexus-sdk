@@ -159,8 +159,14 @@ Este é o primeiro passo da Nexus, focando em remover a fricção entre o usuár
 NPM:  https://www.npmjs.com/package/@nexus-hq/sdk
 
 ---
+# Nexus SDK 🚀
+
+Unified Web3 Liquidity & Gas Abstraction — simplifique a integração com Web3 em qualquer aplicação.
 
 ![sdk-painel-image](https://github.com/user-attachments/assets/0abb39e1-6cee-4cc5-838e-6de81d2b34cc)
+
+[Abrir painel](https://github.com/user-attachments/assets/0abb39e1-6cee-4cc5-838e-6de81d2b34cc)
+
 
 
 📝 Licença
