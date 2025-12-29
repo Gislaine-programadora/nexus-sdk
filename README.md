@@ -93,6 +93,14 @@ O Nexus-SDK inclui um sistema nativo de gestão de taxas, permitindo que os prop
 > **Nota:** Todos os valores são calculados automaticamente pelo nosso motor de liquidação e os recibos são enviados
  via e-mail em formato PDF profissional.
 
+##  resultado  do painel  para sdk
+
+
+<img width="747" height="609" alt="image" src="https://github.com/user-attachments/assets/82b096e5-eae9-4994-b227-4cef5f4457e1" />
+
+
+
+
 
 ## 📄 Licença
 
